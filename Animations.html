@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+            margin: 150px;
+        }
+        .flex1 {
+            display: flex;
+            margin: 150px;
+        }
+
+        .shinchan1 {
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {left: 0 }
+            100% { left: 200px }
+        }
+
+        .shinchan2 {
+            position: relative;
+            animation-name: example1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example1 {
+            0% {  left: 200px }
+            100% {   left: 0 }
+        }
+
+        .shinchan3 {
+            position: relative;
+            animation-name: example2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example2 {
+            0% {left: 0px; top: 0px;}
+            25% {left: 200px; top: 0px;}
+            50% {left: 200px;  top: 200px;}
+            75% {left: 0px;  top: 200px;}
+            100% {left: 0px; top: 0px;}
+        }
+        .shinchan4 {
+            position: relative;
+            animation-name: example3;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes example3 {
+            0%{top: 0;}
+          100%{top: 200px;}
+        }
+        .shinchan5 {
+            margin-top: 200px;
+            margin-left: 200px;
+            height: 100px;
+            width: 600px;
+            animation: rotation 5s linear infinite;
+        }
+            
+        @keyframes rotation {
+              100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* .icon {
+            width: 100px;
+            height: 100px;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div style="width: 50%;">
+            <img class="shinchan1" src="./imag/shinchan-remove.gif" alt="" height="200">
+        </div>
+        <div style="width: 50%;">
+            <img class="shinchan3" src="/imag/shinchan-remove.gif" alt="" height="200">
+        </div>
+    </div>
+    <div class="flex1">
+        <div style="width: 50%;">
+            <img class="shinchan2" src="/imag/shinchan-remove.gif" alt="" width="200">
+        </div>
+        <div style="width: 50%;"> 
+            <img class="shinchan4" src="/imag/shinchan-remove.gif" alt="" width="200">
+        </div>
+    </div>
+    <div class="shinchan5">
+        <div class="icon">
+            <img  src="/imag/shinchan-remove.gif" alt="" width="200">
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

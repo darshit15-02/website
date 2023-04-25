@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/project.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainclass {
+            margin: 10px;
+            border: 3px solid black;
+        }
+
+        .outside {
+            margin-left: 0 30px;
+            display: flex;
+            width: 75%;
+            margin: 0 auto;
+            color: rgb(204, 171, 171)
+        }
+        .cotain{
+             border: 3px solid black; 
+
+        }
+
+        .inside {
+
+            margin-left: 40px;
+            font-size: 15px;
+            width: 50%;
+        }
+
+        .pizza {
+            margin-left: 450px;
+            font-size: 15px;
+            width: 50%;
+        }
+
+        .bagar {
+            margin-left: 200px;
+            font-size: 15px;
+        }
+        dt:hover{
+            color: red;
+        }
+        dd:hover{
+            color: white;
+        }
+        body{
+            background-image: url('./imag/cafe.jpg.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align: center;"><ins>Lemon Tree Cafe Menu</ins> </h1>
+    </div>
+    <div class="cotain">
+        <div class="outside">
+            <div class="inside">
+                <dl>
+                    <dt style="font-size: 25px;"><b><ins>COFFEE</ins></b></dt>
+                    <dd>Caffe Latte</dd>
+                    <dd>Hot Coffee</dd>
+                    <dd>Flat White</dd>
+                    <dd>Americano</dd>
+                    <dt><b><ins>COLD COFFEE</ins> </b></dt>
+                    <dd>Cappuccino</dd>
+                    <dd>Macha</dd>
+                    <dd>Cold Brew</dd>
+                </dl>
+            </div>
+            <div class="pizza">
+                <dl>
+                    <dt style="font-size: 25px;"><b><ins>PIZZA</ins></b></dt>
+                    <dd>Margrita</dd>
+                    <dd>Spring Fling</dd>
+                    <dt><b><ins>EXOTIC VEG</ins></b> </dt>
+                    <dd>Paneer Tikka <br>Butter Masala </dd>
+                    <dd>Burn To Hell</dd>
+                    <dd>Veg.Hawallan</dd>
+                    <dd>Karahi Paneer Special</dd>
+                    <dd>Cheezy-7 Pizza</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="outside">
+            <div class="inside">
+                <dl>
+                    <dt style="font-size: 25px;"><b><ins>TEA</ins></b></dt>
+                    <dd>Green Tea</dd>
+                    <dd>Black Tea</dd>
+                    <dd>Kovo</dd>
+                    <dt><b><ins>HOT FLVOURED TEA</ins></b> </dt>
+                    <dd>Suger Free</dd>
+                    <dd>Cinnamon</dd>
+                    <dt><b><ins>ICE TEA</ins></b> </dt>
+                    <dd>Ginger &amp; Lime</dd>
+                    <dd>Peach</dd>
+                </dl>
+            </div>
+            <div class="bagar">
+                <dl>
+                    <dt style="font-size: 25px;"><b><ins>BURGER</ins></b></dt>
+                    <dd>Regular</dd>
+                    <dd>Medium</dd>
+                    <dd>King</dd>
+                    <dt><b><ins> VEG CHILLI CHEESE</ins></b></dt>
+                    <dd>Regular</dd>
+                    <dd>Medium</dd>
+                    <dd>King</dd>
+                    <dd>Puneer King</dd>
+                </dl>
+            </div>
+        </div>
+
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

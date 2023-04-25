@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-contain {
+            width: 85%;
+            margin: 100px auto;
+            border: 2px solid black;
+            font-size: 0px;
+            box-shadow: 5px 5px rgb(117, 64, 202);
+            /* background-color: ; */
+        }
+
+        .font {
+            margin-left: 30px;
+            /* margin-top: 25px;   */
+            width: 80%;
+            margin: 15px auto;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        label {
+            font-size: 24px;
+        }
+
+        .button1 {
+            width: 65%;
+            margin: 20px auto;
+            margin-top: 20px
+        }
+
+        .button1 button {
+            font-size: 20px;
+            background-color: #9d95bb27;
+            color: #070707;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px 5px 10px 5px;
+            border-color: rgba(219, 128, 207, 0.856);
+        }
+        .font1{
+            margin-left: 30px;
+            margin-top: 45px;
+        }
+
+        .input-class {
+            width: 280px;
+            height: 20px;
+            box-shadow: 2px 2px rgba(182, 113, 113, 0.712);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+        <div class="main">
+            <div>
+                <img src="./imag/pexels-veeterzy-303383.jpg" alt="" width="700" height="550">
+            </div>
+            <div>
+                <form class="font1">
+                    <div class="font">
+                        <label style="margin-top: 80px;" for="fname"> Full Name:</label>
+                        <input class="input-class" type="text" id="fname" placeholder="Name">
+                    </div>
+                    <div class="font">
+                        <label for="E-mail">E-mail: </label><br>
+                        <input class="input-class" type="text" id="E-mail" placeholder="Email address">
+                    </div>
+                    <div class="font">
+                        <label for="Uname"> User Name:</label><br>
+                        <input class="input-class" type="text" id="Uname" placeholder="Username.">
+                    </div>
+                    <div class="font">
+                        <label for="password">Password:</label><br>
+                        <input class="input-class" type="password" id="password" placeholder="password" maxlength="8">
+                    </div>
+                    <div class="font">
+                        <label for="Rpassword">Repeat Password:</label><br>
+                        <input class="input-class" type="password" id="Rpassword" placeholder="Repeat password"
+                            maxlength="8">
+                    </div>
+                    <div class="font">
+                        <input type="checkbox" id="name" name="fav_Gender">
+                        <label for="name">I agree to the <b>Terms of <br>user</b></label>
+                    </div>
+                    <div class="button1">
+                        <button type="button" onclick="alert('submitted')">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

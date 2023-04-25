@@ -1,0 +1,75 @@
+.mainrelative {
+    width: 50%;
+    margin: 100px auto;
+    position: relative;
+}
+
+.fa-square-whatsapp {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    color: #43C253;
+}
+.fa-facebook {
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    color: #0A81EC;
+}
+
+.fa-square-twitter {
+    position: absolute;
+    bottom: -40px;                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    left: -40px;
+    color: #0A81EC;
+}
+
+.fa-square-snapchat {
+    position: absolute;
+    top: -5px;
+    left: 300px;
+    color:#F7F301;
+}
+
+.fa-telegram {
+    position: absolute;
+    left: 0;
+    top: 145px;
+    color: #289FD9;
+}
+
+.fa-skype {
+    position: absolute;
+    bottom: -2px;
+    right: 280px;
+    color: #008CCC;
+}
+
+.fa-square-youtube {
+    position: absolute;
+    right: -5px;
+    top: 145px;
+    color: #FF0000;
+}
+
+#instagram {
+    position: absolute;
+    top: -55px;
+    right: -40px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    text-decoration: none;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    border-radius: 35px;
+    display: grid;
+    place-items: center;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+i {
+    font-size: 100px;
+}

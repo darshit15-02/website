@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(/imag/galaxy.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .earth {
+            width: 40%;
+            margin: 50px auto;
+            position: absolute;
+            left: 35%;
+
+        }
+
+        .earth img {
+            animation: rotation 60s linear infinite;    
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+       
+        .moon {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: 2s ease-in-out 0s normal none infinite moon-move;
+        }
+        
+        @keyframes moon-move {
+            0% {
+                left: 3%;
+                top: 95%;
+                z-index: 5;
+            }
+            50% {
+                left: 105%;
+                top: 5%;
+            }
+            100% {
+                left: 3%;
+                top: 95%;
+                z-index: -5;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="earth">
+        <img src="/imag/earth-png-13.png" alt="" width="500" height="500">
+       
+        
+            <img class="moon" src="/imag/pngimg.com - satellite_PNG23.png" alt="">
+        
+       
+    </div>
+</body>
+
+</html>

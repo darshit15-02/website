@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+    color: black
+}
+
+h2 {
+    text-align: left;
+    margin: 0;
+    padding: 9px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+
+    display: flex;
+    justify-content: flex-end;
+}
+.social h1{
+    float: left;
+}
+
+/* this is nevbar sticky */
+.main_sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #E5E5E5;
+}
+
+/* this is icon fixed */
+.End_fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    font-size: 50px;
+}
+
+li {
+    color: white;
+}
+
+.main ul {
+    display: flex;
+    align-items: center;
+}
+
+.main ul li {
+    list-style: none;
+    /* padding: 10px; */
+}
+
+.main ul li a {
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-size: 18px
+}
+
+.main ul li a i {
+    font-size: 25px;
+    padding: 5px;
+}
+
+p {
+    padding: 9px;
+    margin: 2px;
+}

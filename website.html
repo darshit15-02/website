@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-contain">
+            <ul class="mainclass1">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="mainclass2"><a href="#setting">setting</a></li>
+            </ul>
+        </div>
+        <div class="main-contain1">
+            <ul class="mainclass3">
+                <li class="border-solid"><a href="#Opacity">Opacity</a></li>
+                <li class="border-solid"><a href="#Pseudo-elements">Pseudo-elements</a></li>
+                <li class="border-solid"><a href="#Pseudo-classes">Pseudo-classes</a></li>
+                <li class="border-solid"><a href="#Combinators">Combinators</a></li>
+            </ul>
+            <div id="Opacity">
+                <h1>Opacity</h1>
+                <div class="img">
+                    <img src="/imag/cover 1.jpg" alt="" width="280" height="300">
+                    <img src="/imag/cover2.webp" alt="" width="280" height="300">
+                    <img src="/imag/cover 3.webp" alt="" width="280" height="300">
+                </div>
+                <div class="img">
+                    <div class="colour frist"></div>
+                    <div class="colour second"></div>
+                    <div class="colour thired"></div>
+                </div>
+                <div class="background">
+                    <div class="transbox">
+                        <p>Hey I am Darshit</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Pseudo-elements">
+                <h1>Pseudo-elements</h1>
+                <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a
+                    text!</p>
+                <h2>This is a heading</h2>
+                <p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+                <h2>This is a heading</h2>
+                <div class="img-exe">
+                    <h1>This is a heading</h1>
+                    <p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+                    <h1>This is a heading</h1>
+                </div>
+                <hr>
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+
+                <ol>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ol>
+                <h1>Select some text on this page:</h1>
+
+
+<div>This is some text in a div element.</div>
+
+            </div>
+            <div id="Pseudo-classes">
+                <h1>Pseudo-classes</h1>
+                <h3>first-child</h3>
+                <div class="Pseudo-classes">
+                    <p>i am darshit.</p>
+                    <p>i am darshit.</p>
+                    <div>
+                        <p>i am darshit.</p>
+                        <p>i am darshit.</p>
+                    </div>
+                </div>
+                <hr>
+                <h3>first-child i</h3>
+                <div class="Pseudo-classes">
+                    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+                    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+                    <div>
+                        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+                        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+                    </div>
+                </div>
+
+
+                <div id="Combinators">
+                    <h1>Combinators</h1>
+                    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+                    <div class="Combinators">
+                        <p>Paragraph 1 in the div.</p>
+                        <p>Paragraph 2 in the div.</p>
+                        <section>
+                            <p>Paragraph 3 in the div.</p>
+                        </section>
+                    </div>
+
+                    <p>Paragraph 4. Not in a div.</p>
+                    <p>Paragraph 5. Not in a div.</p>
+                    <hr>
+                    <h3>Child Selector</h3>
+                    <div class="Combinators">
+                        <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+                        <div>
+                            <p>Paragraph 1 in the div.</p>
+                            <p>Paragraph 2 in the div.</p>
+                            <section>
+                                <!-- not Child but Descendant -->
+                                <p>Paragraph 3 in the div (inside a section element).</p>
+                            </section>
+                            <p>Paragraph 4 in the div.</p>
+                        </div>
+                        <p>Paragraph 5. Not in a div.</p>
+                        <p>Paragraph 6. Not in a div.</p>
+                    </div>
+                    <hr>
+                    <h3>Adjacent Sibling Selector</h3>
+                    <p>The + selector is used to select an element that is directly after another specific element.</p>
+                    <p>The following example selects the first p element that are placed immediately after div elements:
+                    </p>
+
+                    <div>
+                        <p>Paragraph 1 in the div.</p>
+                        <p>Paragraph 2 in the div.</p>
+                    </div>
+
+                    <p>Paragraph 3. After a div.</p>
+                    <p>Paragraph 4. After a div.</p>
+
+                    <div>
+                        <p>Paragraph 5 in the div.</p>
+                        <p>Paragraph 6 in the div.</p>
+                    </div>
+
+                    <p>Paragraph 7. After a div.</p>
+                    <p>Paragraph 8. After a div.</p>
+                    <hr>
+                    <h3>General Sibling Selector</h3>
+                    <p>Paragraph 1.</p>
+                    <div>
+                        <p>Paragraph 2.</p>
+                    </div>
+                    <p>Paragraph 3.</p>
+                    <code>Some code.</code>
+                    <p>Paragraph 4.</p>
+                </div>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 2%, rgba(0, 212, 255, 1) 50%, rgba(0, 212, 255, 1) 85%);
+        }
+        .bg1 {
+            text-align: center;
+            margin-top: 130px;
+            animation: earth 35s linear infinite;
+            position: relative;
+        }
+        @keyframes earth {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .sun{
+            position: absolute;
+            top: 10px;
+            right: 490px;
+            animation-name: sunrise;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sunrise {
+            0%{top: 110px;}
+          100%{top: 0;}
+        }
+        .cloud{
+            position: absolute;
+            top: 1px;
+            animation-name: cloud;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cloud {
+            0%{left: 0;}
+          100%{left: 1000px;}
+        }
+        /* .cloud1{
+            position: absolute;
+            top: 1px;
+            right: 1100px;
+            animation-name: cloud1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cloud1 {
+            0%{left: 150px;}
+          100%{left: 900px;}
+        } */
+        .satellite{
+            position: absolute;
+            top: 300px;
+            animation-name: satellite;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes satellite {
+            0% {top:340px;}
+            10% {top:350px; left:10px;}
+            20% {top:370px; left:80px;}
+            30% {top:390px; left:150px;}
+            40% {top:410px; left:220px;}
+            50% {top:450px; left:290px;}
+            60% {top:510px; left:360px;}
+            70% {top:530px; left:430px;}
+            80% {top:550px; left:500px;}
+            90% {top:570px; left:570px;}
+            100% {top:590px; left:640px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="bg1">
+            <img src="/imag/earth-png-13.png" alt="">
+        </div>
+        <div class="sun">
+            <img src="/imag/sun-img-removebg-preview.png" alt="" width="100px" height="100px">
+        </div>
+        <div class="cloud">
+            <img src="/imag/earth-png-13.png" alt="" width="200px" height="200px"> 
+        </div>
+        <!-- <div class="cloud1">
+            <img src="/image/cloud1-removebg-preview.png" alt="" width="200px" height="200px"> 
+        </div> -->
+        <div class="satellite">
+            <img src="/imag/earth-png-13.png" alt="" width="300px" height="200px">
+        </div>
+    </div>
+</body>
+
+</html>

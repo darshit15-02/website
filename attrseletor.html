@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target] {
+            background-color: yellow;
+        }
+
+        div a[target=_blank] {
+            background-color: red;
+        }
+
+        [title~=flower] {
+            border: 5px solid yellow;
+        }
+
+        [class|=top] {
+            background: red;
+        }
+
+        [class^="top"] {
+            background: yellow;
+        }
+
+        [class$="test"] {
+            background: red;
+        }
+
+        [class*="te"] {
+            background: green;
+        }
+
+        input[type=text] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+        }
+
+        input[type=button] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <hr>
+    <div>
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="http://www.disney.com" target="_blank">disney.com</a>
+        <a href="http://www.wikipedia.org" target="_blank">wikipedia.org</a>
+    </div>
+    <hr>
+    <img src="/imag/klematis.jpg" title="klematis flower" width="150" height="113">
+    <img src="/imag/img_flwr.gif" title="flower" width="224" height="162">
+    <img src="/imag/img_tree.gif" title="tree" width="200" height="358">
+    <hr>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello Darshit!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <hr>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <hr>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    <hr>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    <hr>
+    <h2>Styling Forms</h2>
+
+    <form name="input" action="" method="get">
+        Firstname:<input type="text" name="Name" value="Peter" size="20">
+        Lastname:<input type="text" name="Name" value="Griffin" size="20">
+        <input type="button" value="Example Button">
+    </form>
+
+</body>
+
+</html>

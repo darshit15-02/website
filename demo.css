@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-shadow: 3px -2px 5px red;
+    
+ }
+    p {
+        color: green;
+        text-indent: 20px;
+    }
+    h2{
+         text-align: center; 
+    }
+    .icons{
+        width: 10%;
+        margin: 0 auto;
+        
+    }
+    

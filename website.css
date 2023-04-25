@@ -1,0 +1,226 @@
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-contain {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: #f1f1f1;
+}
+
+.main-contain1 {
+    width: 80%;
+    margin-left: 20%;
+
+}
+
+body {
+    margin: 0;
+}
+
+.mainclass2 {
+    position: fixed;
+    bottom: 0;
+}
+
+.mainclass1 {
+    list-style-type: none;
+    margin: 0;
+    overflow: auto;
+    padding: 10px;
+}
+
+.mainclass3 {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.border-solid {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 55px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.img {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+
+.colour {
+    height: 300px;
+    width: 280px;
+    padding: 5px;
+}
+
+.frist {
+    background-color: rgba(255, 255, 0, 0.5);
+
+}
+
+.frist:hover {
+    background-color: rgba(255, 255, 0, 1);
+
+}
+
+.second {
+    background-color: rgba(0, 17, 255, 0.5);
+
+}
+
+.second:hover {
+    background-color: rgba(0, 17, 255, 1);
+
+}
+
+.thired {
+    background-color: rgba(255, 0, 0, 0.5);
+
+}
+
+.thired:hover {
+    background-color: rgba(255, 0, 0, 1);
+
+}
+
+.img img {
+    padding: 5px;
+}
+
+img:hover {
+    opacity: 0.5;
+   
+}
+
+.background {
+    background: url(/imag/flower.jpg) repeat;
+    border: 2px solid black;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+}
+ /* ol {
+    width: 80%;
+    margin: 0 auto;
+}
+p {
+    width: 80%;
+    margin: 0 auto;
+}
+h3 {
+    width: 80%;
+    margin: 0 auto;
+}
+h2 {
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    width: 80%;
+    margin: 0 auto;
+}
+ul {
+    width: 80%;
+    margin: 0 auto;
+}  */
+
+.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+::marker {
+    color: red;
+    font-size: 23px;
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+#Pseudo-elements p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+#Pseudo-elements p::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+}
+
+h2::before {
+    content: url(https://www.w3schools.com/css/smiley.gif);
+}
+
+.img-exe h1::after {
+    content: url(https://www.w3schools.com/css/smiley.gif);
+
+}
+
+.img-exe h1 {
+    text-align: left;
+}
+
+
+.Pseudo-classes p:first-child {
+    color: blue;
+}
+
+#Pseudo-classes p:first-child i {
+    color: blue;
+}
+
+.Combinators p {
+    background-color: yellow;
+}
+
+.Combinators>p {
+    background-color: yellow;
+}
+
+div+p {
+    background-color: yellow;
+}
+
+div~p {
+    background-color: yellow;
+}

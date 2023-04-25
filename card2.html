@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #7AD588;
+        }
+
+        .main {
+            width: 30%;
+            margin: 70px auto;
+            height: 500px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .sub-contain {
+            width: 65%;
+            height: 40%;
+            position: absolute;
+            margin: 0 auto;
+            background-color: #6BBB9E;
+            text-align: center;
+            padding: 25px 50px;
+            left: 20px;
+            top: -50px;
+            border-radius: 20px;
+        }
+
+        .sub-contain h2 {
+            font-size: 30px;
+            margin: 0;
+            padding-top: 5px;
+            color: white;
+        }
+
+        .sub-contain p {
+            font-size: 20px;
+            margin: 0;
+            padding-top: 5px;
+            color: white;
+        }
+
+        .with {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sub-contain i {
+            border: 2px solid black;
+            background-color: white;
+            font-size: 70px;
+            padding: 20px;
+            border-radius: 80px;
+        }
+
+        .main-contain {
+            position: absolute;
+            width: 90%;
+            margin: 0 auto;
+            height: 500px;
+            top: 50%;
+            left: 20px;
+        }
+
+        .sub-main {
+            display: flex;
+            align-items: center;
+        }
+
+        .sub-main1 {
+            /* margin-left: 30px; */
+            margin: 0 5px;
+        }
+
+        .sub-main i {
+            font-size: 30px;
+            color: #6BBB9E;
+            margin: 0 10px;
+            align-items: center;
+        }
+
+        .sub-main h4 {
+            color: #6BBB9E;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .sub-main h5 {
+            color: #6BBB9E;
+            margin: 2px;
+        }
+
+        .footer {
+            width: 75%;
+    height: 5%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: #6BBB9E;
+    text-align: center;
+    padding: 25px 32px;
+    bottom: -25px;
+    border-radius: 20px;
+    left: 20px;
+}
+        /* .footer li{
+            margin: 0 10px;
+        } */
+
+        .footer ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0 ;
+            padding: 0 ;
+            justify-content:space-between;
+            width: 100%;
+            
+
+        }
+
+        .footer i {
+            font-size: 40px;
+            margin-top: -5px;
+            
+
+        }
+
+        i.fa-solid.fa-mobile {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="with">
+            <div class="sub-contain">
+                <i class="fa-regular fa-user"></i>
+                <h2>John Doe</h2>
+                <p>Mobile App Developer</p>
+            </div>
+            <div class="main-contain">
+                <div class="sub-main">
+                    <i class="fa-solid fa-mobile"></i>
+                    <div class="sub-main1">
+                        <h4>5-555-666-777</h4>
+                        <h5>Mobile number</h5>
+                    </div>
+                </div>
+                <div class="sub-main">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="sub-main1">
+                        <h4>example@gmail.com</h4>
+                        <h5>Email address</h5>
+                    </div>*
+                </div>
+                <div class="sub-main">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <div class="sub-main1">
+                        <h4>www.example.com</h4>
+                        <h5>Website address</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

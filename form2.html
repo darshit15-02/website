@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-contain {
+            width: 45%;
+            margin: 0 auto;
+            border: 2px solid black;
+            /* margin-right: 10px; */
+            background-color: #b8b6b0
+        }
+
+        .title-border {
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 25px;
+            width: 500px;
+            padding: 5px;
+            margin: 20px;
+            background-color: rgb(200, 202, 200);
+
+        }
+
+        .title-border1 {
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 120px;
+            width: 500px;
+            padding: 5px;
+            margin: 0 20px;
+            background-color:  rgb(200, 202, 200);
+        }
+
+        .title-border2 {
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            height: 80px;
+            width: 500px;
+            padding: 5px;
+            margin: 20px;
+            margin-right: 50px;
+            background-color:  rgb(200, 202, 200);
+        }
+
+        .button {
+            text-align: center;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        .card {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .name {
+            margin: 0px auto;
+            width: 50%;
+        }
+
+        input{
+            background-color: transparent;
+        }
+
+        textarea{
+            background-color: transparent;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+        <form>
+            <div style="margin: 20px;">
+                <h2> Step 1:Your details</h2>
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        <td> <label for="fname"> Name:</label></td>
+                        <td class="name"> <input type="text" id="fname" placeholder="Frist and Last name"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        <td> <label for="E-mail">E-mail:</label></td>
+                        <td class="name"> <input type="text" id="E-mail" placeholder="example@domain.com"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        <td> <label for="mobile"> Phone </label></td>
+                        <td class="name"><input type="tel" id="mobile" placeholder="Eg.+447500000000" maxlength="10">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin: 20px;">
+                <h2>Step 2:Delivery address</h2>
+            </div>
+            <div class="title-border1" style="display: flex;">
+
+                <div>
+
+                    <p for="Address">Address:</p>
+                </div>
+                <div>
+                    <textarea name="message" id="Address" style="width:400px; height:100px;"></textarea>
+                </div>
+
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        <td> <label for="code">Post code:</label></td>
+                        <td class="name"><input type="tel" id="code"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        
+                        <td><label for="Country">Country:</label></td>
+                        <td class="name"> 
+                           <form action="">
+                            <select id="Country" name="Country">
+                                <option value="India">India</option>
+                                <option value="London">London</option>
+                                <option value="american">american</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Uk">Uk</option>
+                                <option value="Dubai">Dubai</option>
+                              </select>
+                           </form>
+                        </td>
+                            
+                    </tr>
+                </table>
+            </div>
+            <div style="margin: 20px;">
+                <h2>Step 3:Card detalis</h2>
+            </div>
+            <div class="title-border2">
+                <p>Card type</p>
+                <div class="card">
+                    <input type="radio" id="VISA" name="fav_Card"><img src="./imag/Visa_Inc._logo.svg.webp" alt="" width="35"> VISA
+                    <input type="radio" id="AmEx" name="fav_Card"><img src="./imag/1200px-American_Express_logo_(2018).svg.webp" alt="" height="10px" width="35"> AmEx
+                    <input type="radio" id="Mastercard" name="fav_Card"><img src="./imag/mastcard.png" alt="" height="15" width="35"> Mastercard
+                </div>
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        <td><label for="number">Card numbe :</label></td>
+                        <td class="name"><input type="tel" id="numbe"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        <td> <label for="Security Code">Security Code :</label></td>
+                        <td class="name"><input type="tel" id="Security Code"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="title-border">
+                <table>
+                    <tr>
+                        <td> <label for="Name on card">Name on card:</label></td>
+                        <td class="name"><input type="text" id="Name on card" placeholder="Exact name as on the card">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="button">
+                <button type="button" style="font-size: 25px;" onclick="alert('submitted')">BUY IT!</button><br><br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

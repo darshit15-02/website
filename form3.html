@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            background-image: url('/imag/sunset-1373171__480.jpg');
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size:cover;
+        }
+        .main-conatain {
+            width: 40%;
+            /* padding: 40px; */
+            margin: 59px auto;
+            border: 1px solid black;
+            border: 1px solid rgba(255,255,255,0.18);
+            /* outline: 5px solid 0 8px 32px 0 rgb(31 38 135 / 37%); */
+            outline: 5px solid rgba(255,255,255,0.5);
+            outline-offset: 7px;
+            /* background-color: lightgray; */
+             background: rgba(255,255,255,0.5); 
+            backdrop-filter: blur(1.5px);
+            border-radius: 10px;
+
+        }
+
+        .Lform {
+            text-align: center;
+            font-size: 30px;
+            color: #493c7c;
+        }
+
+        .font {
+            /* width: 100%; */
+
+            margin-left: 60px;
+            font-size: 30px;
+        }
+        label{
+            color: #8D576E;
+        }
+
+        input {
+            width: 400px;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .button1{
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 20px   
+        }
+        .button1 button{
+            font-size: 22px;
+             background-color:  #9d95bb27  ; 
+             color: #070707 ;
+             width: 200px;
+             text-align: center;
+             border-radius: 10px 5px 10px 5px;
+             border-color:rgba(219, 128, 207, 0.856);
+             
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-conatain">
+        <div class="Lform">
+            <h1>Login Form</h1>
+        </div>
+        <div class="font">
+            <label for="fname"> Frist Name:</label>
+            <input type="text" id="fname" placeholder="Frist Name"><br>
+        </div>
+        <div class="font">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" placeholder="Last Name"><br>
+        </div>
+        <div class="font">
+            <label for="E-mail">E-mail: </label><br>
+            <input type="text" id="E-mail" placeholder="@Gamil.com"><br>
+        </div>
+        <div class="font">
+            <label for="Uname"> User Name:</label><br>
+            <input type="text" id="Uname" placeholder="User name"><br>
+        </div>
+        <div class="font">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="strong password Enter" maxlength="8"><br>
+        </div>
+        <div class="button1">
+            <button type="button" onclick="alert('submitted')">submit</button> <br><br>
+        </div>
+    </div>
+</body>
+
+</html>

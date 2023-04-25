@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=8uu, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            text-align: center;
+        }
+        .main-contain {
+             width: 40%;
+            border: 10px dashed black;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgb(175, 157, 157);
+            font-size: 20px;
+        }
+        .c1 {
+            text-align: center;
+            display: flex;
+           
+        }
+        .button1{
+            text-align: center;
+            margin-top: 20px;
+          
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-contain">
+        <div class="title">
+            <h1>Registration from</h1>
+        </div>
+        <form>
+            <div class="c1">
+                <div>
+                    <label for="fname" style="margin-right:120px;"> Frist Name:</label><br>
+                    <input type="text" style="margin-right: 30px;" id="fname" placeholder="Enter name">
+                </div>
+                <div>
+                    <label for="lname" style="margin-right: 120px;">Last Name:</label><br>
+                    <input type="text" style="margin-right: 30px;" id="lname" placeholder="Surname"> <br><br>
+                </div>
+            </div>
+            <div>
+                <label for="E-mail">E-mail:   </label>
+                <input type="text" id="E-mail" placeholder="@Gamil.com"><br><br>
+            </div>
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="Brith Date">
+            </div>
+            <div>
+                <p>Gender</p>
+                <input type="radio" id="Male" name="fav_Gender">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="fav_Gender">
+                <label for="Female">Female</label>
+                <input type="radio" id="Other" name="fav_Gender">
+                <label for="Other">Other</label> <br><br>
+            </div>
+            <div>
+                <label for="mobile"> Phone number</label><br>
+                <input type="tel" id="mobile" placeholder="12345-67890" maxlength="10"><br>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="strong password Enter" maxlength="8"><br>
+            </div>
+
+            
+            <div class="button1">
+                <button type="button" style="font-size: 25px;" onclick="alert('submitted')">submit</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>
